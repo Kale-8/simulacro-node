@@ -19,5 +19,5 @@ Event.init({
     location: {type: DataTypes.STRING, allowNull: false},
     capacity: {type: DataTypes.INTEGER, allowNull: false},
     organizerId: {type: DataTypes.INTEGER, allowNull: false}
-}, {sequelize, modelName: "event", tableName: "events", timestamps: true});
+}, {sequelize, modelName: "event", tableName: "events", timestamps: false});
 export {Event};

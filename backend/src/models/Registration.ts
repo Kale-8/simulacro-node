@@ -13,5 +13,5 @@ Registration.init({
     status: {type: DataTypes.ENUM("pending", "confirmed", "cancelled"), defaultValue: "pending"},
     userId: {type: DataTypes.INTEGER, allowNull: false},
     eventId: {type: DataTypes.INTEGER, allowNull: false}
-}, {sequelize, modelName: "registration", tableName: "registrations", timestamps: true});
+}, {sequelize, modelName: "registration", tableName: "registrations", timestamps: false});
 export {Registration};

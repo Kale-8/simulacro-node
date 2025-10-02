@@ -15,5 +15,5 @@ User.init({
     email: {type: DataTypes.STRING, allowNull: false, unique: true},
     password: {type: DataTypes.STRING, allowNull: false},
     role: {type: DataTypes.ENUM("admin", "participant", "organizer"), defaultValue: "participant"}
-}, {sequelize, modelName: "user", tableName: "users", timestamps: true});
+}, {sequelize, modelName: "user", tableName: "users", timestamps: false});
 export {User};
